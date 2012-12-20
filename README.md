@@ -7,7 +7,7 @@ Splearch provides a simplified abstraction of regex searching to locate patterns
 
 ## Usage
 
-    Splearch('foo.{bar,baz*}.buz{1..5}')
+    Splearch('foo.{bar**,baz{1..5}}.buz')
     Splearch('foo.*.bux', {
       braces: false // Can be broken down to 'ranges' and 'lists'
       , double_splats: false
