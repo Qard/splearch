@@ -1,0 +1,18 @@
+{
+  "name": "splearch",
+  "version": "0.0.1",
+  "description": "Pattern matching regex abstraction based on Ruby's Dir.glob",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Qard/splearch.git"
+  },
+  "keywords": ["regex", "pattern", "matching", "glob"],
+  "homepage":"https://github.com/Qard/splearch",
+  "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
