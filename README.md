@@ -1,5 +1,5 @@
 # Splearch
-Splearch provides a simplified abstraction of regex searching to locate patterns in a string. It works very similar to how Dir.glob does in ruby in that * matches word characters, ** matches all characters, and braces can be used to expand lists to multiple matching possibilities.
+Splearch provides a simplified abstraction of regex searching to locate patterns in a string. It works very similar to how Dir.glob does in ruby in that * matches word characters, ** matches all characters, and braces can be used to expand lists to multiple matching possibilities. It simply builds and returns a RegExp object, which you can use however you see fit.
 
 ## Install
 
@@ -7,7 +7,11 @@ Splearch provides a simplified abstraction of regex searching to locate patterns
 
 ## Usage
 
-    Splearch('foo.{bar**,baz{1..5}}.buz')
+    var regex = Splearch('foo.{bar**,baz{1..5}}.buz')
+    regex.test('foo.bart.simpson.buz') // true
+    regex.test('foo.baz3.buz') // true
+
+    // You can also disable specific features
     Splearch('foo.*.bux', {
       braces: false // Can be broken down to 'ranges' and 'lists'
       , double_splats: false
