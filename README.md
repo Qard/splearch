@@ -1,4 +1,6 @@
 # Splearch
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/splearch.svg)](https://greenkeeper.io/)
 Splearch provides a simplified abstraction of regex searching to locate patterns in a string. It works very similar to how Dir.glob does in ruby in that * matches word characters, ** matches all characters, and braces can be used to expand lists to multiple matching possibilities. It simply builds and returns a RegExp object, which you can use however you see fit.
 
 ## Install
